@@ -1,0 +1,106 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Complete React Developer (w/ Redux, Hooks, GraphQL)",
+      "description": "Updated! Become a Senior React Developer. Build a massive E-commerce app with Redux, Hooks, GraphQL, Stripe, Firebase",
+      "duration": "12 weeks",
+      "instructorId": 1,
+      "image": "/images/react-course.png",
+      "link": "https://www.udemy.com/course/complete-react-developer-zero-to-mastery/"
+    },
+    {
+      "id": 2,
+      "title": "System Design (LLD + HLD) from Basics to Advanced",
+      "description": "Covered both Low Level Design (LLD) and High Level Design (HLD) in this course",
+      "duration": "8 weeks",
+      "instructorId": 2,
+      "image": "../images/system-design.png",
+      "link": "https://www.udemy.com/course/system_design_lld_hld/"
+    },
+    {
+      "id": 3,
+      "title": "The AI Engineer Course 2025: Complete AI Engineer Bootcamp",
+      "description": "Complete AI Engineer Training: Python, NLP, Transformers, LLMs, LangChain, Hugging Face, APIs",
+      "duration": "4 weeks",
+      "instructorId": 3,
+      "image": "../images/ai-engineer.png",
+      "link": "https://www.udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp/"
+    }
+  ],
+  "instructors": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "expertise": "Python, Data Structures",
+      "email": "john.doe@codesaga.ca"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "expertise": "HTML, CSS, JavaScript",
+      "email": "jane.smith@codesaga.com"
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "expertise": "R, Data Visualization",
+      "email": "alice.johnson@codesaga.ca"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "name": "Michael Brown",
+      "email": "mbrown@codesaga.ca"
+    },
+    {
+      "id": 2,
+      "name": "Emily Davis",
+      "email": "edavis@codesaga.ca"
+    },
+    {
+      "id": 3,
+      "name": "David Wilson",
+      "email": "dwilson@codesaga.ca"
+    }
+  ],
+  "enrollments": [
+    {
+      "id": 1,
+      "courseId": 1,
+      "studentId": 1,
+      "enrollmentDate": "2023-01-15"
+    },
+    {
+      "id": 2,
+      "courseId": 2,
+      "studentId": 2,
+      "enrollmentDate": "2023-02-20"
+    },
+    {
+      "id": 3,
+      "courseId": 3,
+      "studentId": 3,
+      "enrollmentDate": "2023-03-10"
+    },
+    {
+      "id": 4,
+      "courseId": 1,
+      "studentId": 3,
+      "enrollmentDate": "2024-01-15"
+    },
+    {
+      "id": 5,
+      "courseId": 2,
+      "studentId": 3,
+      "enrollmentDate": "2024-02-20"
+    },
+    {
+      "id": 6,
+      "courseId": 1,
+      "studentId": 2,
+      "enrollmentDate": "2024-03-20"
+    }
+  ]
+}
