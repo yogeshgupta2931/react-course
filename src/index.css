@@ -1,9 +1,37 @@
 body {
   margin: 0;
-  background-color: #afafaf;
+  padding: 0;
+  background-color: #e6e6e6;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.card:hover {
+  background-color: #9c9c9c;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+
+.course-instructor:before {
+  content: "~ "
+}
+
+.course-instructor{
+  font-style: italic;
+}
+.course-title{
+  height: 50px;
+  overflow: scroll;
+}
+
+.course-description{
+  height: 70px;
+  overflow: scroll;
+}
+
+.border-top {
+  border-top: var(--bs-border-width) var(--bs-border-style) #139cb9 !important;
 }

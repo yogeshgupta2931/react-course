@@ -2,23 +2,26 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import CardList from "./components/card-list/card-list.component";
 import SearchBox from "./components/search-box/search-box.component";
+import ErrorAlert from "./components/error-alert/error-alert.component";
+import NavBar from "./components/nav-bar/nav-bar.component";
+import FooterBar from "./components/footer-bar/footer-bar.component";
 
 const App = () => {
+  const [error, setError] = useState({'status':200, 'message':''});
   const [searchField, setSearchField] = useState("");
   const [courses, setCourses] = useState([]);
   const [filteredCourses, setFilteredCourses] = useState(courses);
 
-  //console.log("Render");
-
   useEffect(() => {
-    //console.log("Fetch course UseEffect triggered");
-    //fetch("https://jsonplaceholder.typicode.com/users")
     fetch("http://localhost:3300/courses?_embed=instructor")
       .then((response) => response.json())
       .then((courses) => {
-        console.log(courses);
         setCourses(courses);
-      });
+      })
+      .catch((error) => {
+        console.log(error);
+        setError({'status': 400, 'message': error});
+      });;
   }, []);
 
   useEffect(() => {
@@ -34,15 +37,28 @@ const App = () => {
   };
 
   return (
-    <div className="App">
-      <h1 className="app-title">Trending React Courses on Udemy</h1>
-      <SearchBox
-        onChangeHandler={onSearchCourse}
-        placeholder="search courses"
-        className="search-courses"
-      />
-      <CardList courses={filteredCourses} />
-    </div>
+    <>
+      <div className="container-flex">
+        <NavBar></NavBar>
+      </div>
+      <div className="container">
+        <div className="App">
+          <h3 className="app-title mt-3 mb-3">Upskill with these trending courses</h3>
+          <SearchBox
+            onChangeHandler={onSearchCourse}
+            placeholder="search courses"
+            className="search-courses mb-3"
+          />
+          { (error.status !== 200)
+            ?<ErrorAlert error={error} />
+            :<CardList courses={filteredCourses} />
+          }
+        </div>
+      </div>
+      <div className="container-flex">
+        <FooterBar></FooterBar>
+      </div>
+    </>
   );
 };
 
