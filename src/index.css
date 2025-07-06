@@ -8,11 +8,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+.card {
+  margin-bottom: 25px;
+}
+
+.card-img-top {
+  height: 272px;
+  object-fit: cover;
+  object-position: center;
+}
 .card:hover {
-  background-color: #9c9c9c;
-  -webkit-transition: background-color 500ms linear;
-  -ms-transition: background-color 500ms linear;
-  transition: background-color 500ms linear;
+  background-color: #e7e7e7;
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
 }
 
 .course-instructor:before {

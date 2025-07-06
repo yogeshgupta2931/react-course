@@ -15,7 +15,7 @@
       "description": "Covered both Low Level Design (LLD) and High Level Design (HLD) in this course",
       "duration": "8 weeks",
       "instructorId": 2,
-      "image": "../images/system-design.png",
+      "image": "/images/system-design.png",
       "link": "https://www.udemy.com/course/system_design_lld_hld/"
     },
     {
@@ -24,8 +24,44 @@
       "description": "Complete AI Engineer Training: Python, NLP, Transformers, LLMs, LangChain, Hugging Face, APIs",
       "duration": "4 weeks",
       "instructorId": 3,
-      "image": "../images/ai-engineer.png",
+      "image": "/images/ai-engineer.png",
       "link": "https://www.udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp/"
+    },
+    {
+      "id": 4,
+      "title": "Python for Data Science and Machine Learning Bootcamp",
+      "description": "Learn Python for Data Science and Machine Learning with this comprehensive course",
+      "duration": "10 weeks",
+      "instructorId": 4,
+      "image": "/images/python-data-science.png",
+      "link": "https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/"
+    },
+    {
+      "id": 5,
+      "title": "Web Development Bootcamp: HTML, CSS, JavaScript",
+      "description": "Master web development with this complete bootcamp covering HTML, CSS, and JavaScript",
+      "duration": "6 weeks",
+      "instructorId": 2,
+      "image": "/images/web-development.png",
+      "link": "https://www.udemy.com/course/web-development-bootcamp-html-css-javascript/"
+    },
+    {
+      "id": 6,
+      "title": "Data Visualization with R: From Basics to Advanced",
+      "description": "Learn data visualization techniques using R, covering both basic and advanced topics",
+      "duration": "5 weeks",
+      "instructorId": 3,
+      "image": "/images/data-visualization-r.png",
+      "link": "https://www.udemy.com/course/data-visualization-with-r-from-basics-to-advanced/"
+    },
+    {
+      "id": 7,
+      "title": "Machine Learning A-Z™: Hands-On Python & R In Data Science",
+      "description": "Master machine learning with hands-on projects in Python and R",
+      "duration": "14 weeks",
+      "instructorId": 4,
+      "image": "/images/machine-learning.png",
+      "link": "https://www.udemy.com/course/machinelearning/"
     }
   ],
   "instructors": [
@@ -46,6 +82,24 @@
       "name": "Alice Johnson",
       "expertise": "R, Data Visualization",
       "email": "alice.johnson@codesaga.ca"
+    },
+    {
+      "id": 4,
+      "name": "Bob Brown",
+      "expertise": "Machine Learning, AI",
+      "email": "bob.brown@codesaga.ca"
+    },
+    {
+      "id": 5,
+      "name": "Charlie Green",
+      "expertise": "Web Development, Full Stack",
+      "email": "cgreen@codesaga.ca"
+    },
+    {
+      "id": 6,
+      "name": "Diana White",
+      "expertise": "System Design, Architecture",
+      "email": "dwhite@codesaga.ca"
     }
   ],
   "students": [
@@ -63,6 +117,22 @@
       "id": 3,
       "name": "David Wilson",
       "email": "dwilson@codesaga.ca"
+    },
+    {
+      "id": 4,
+      "name": "Sarah Johnson",
+      "email": "cgreen@codesaga.ca"
+
+    },
+    {
+      "id": 5,
+      "name": "James Smith",
+      "email": "jsmith@codesaga.ca"
+    },
+    {
+      "id": 6,
+      "name": "Olivia Brown",
+      "email": "obrown@codesaga.ca"
     }
   ],
   "enrollments": [

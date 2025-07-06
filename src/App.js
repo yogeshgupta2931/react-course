@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import CardList from "./components/card-list/card-list.component";
+import CardList from "./components/card/card-list.component";
 import SearchBox from "./components/search-box/search-box.component";
 import ErrorAlert from "./components/error-alert/error-alert.component";
 import NavBar from "./components/nav-bar/nav-bar.component";
@@ -43,12 +43,18 @@ const App = () => {
       </div>
       <div className="container">
         <div className="App">
-          <h3 className="app-title mt-3 mb-3">Upskill with these trending courses</h3>
-          <SearchBox
-            onChangeHandler={onSearchCourse}
-            placeholder="search courses"
-            className="search-courses mb-3"
-          />
+          <div className="row mt-3 mb-3">
+            <div className="col">
+              <h3 className="app-title mt-3 mb-3">Upskill with these trending courses</h3>
+            </div>
+            <div className="col">
+              <SearchBox
+                onChangeHandler={onSearchCourse}
+                placeholder="search courses"
+                className="search-courses mt-3 mb-3 form-control"
+              />              
+            </div>
+          </div>
           { (error.status !== 200)
             ?<ErrorAlert error={error} />
             :<CardList courses={filteredCourses} />
