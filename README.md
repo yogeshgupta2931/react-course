@@ -23,3 +23,5 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Run the server by the following command
 `npx json-server --watch -p 3300 db.json`
+
+If you get any errors with APIs, then just save `db.json` file again which should trigger json-server to reload the data correctly.
